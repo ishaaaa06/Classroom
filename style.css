@@ -158,21 +158,22 @@ h1{
   }
  */
 
- div{
+ /* div{
   height: 200px;
   width: 200px;
   background-color: red;
-  border: 2px solid black;
+  border: 2px solid black; */
   /* transition-duration: 3s; */
   /* transition-timing-function:steps(3);
   
   transform: scale(1,2); */
-  animation-name: isha ;
-  animation-duration: 3s;
-  animation-delay: 1s;
-  animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  animation-iteration-count: 5;
- }
+  /* animation-name: isha ;
+  animation-duration: 3s; */
+  /* animation-delay: 0s; */
+  /* animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1); */
+  /* animation-iteration-count:5; */
+  /* animation-direction: alternate ; */
+ /* } */
 
  /* div:hover{
   /* background-color: pink;
@@ -184,7 +185,28 @@ h1{
     background-color: pink;
  }
  } */
-@keyframes isha{
-  from{background-color:red}
-  to{background-color:pink}
+/* @keyframes isha{
+  0%{background-color:red;}
+  50%{background-color: black;}
+  100%{background-color: pink;}
+} */
+
+#loader{
+ height: 200px;
+ width: 200px;
+ background-color: rgb(229, 229, 127);
+ 
+ border-radius: 50%;
+ border: 20px solid pink;
+ border-left:20px solid purple;
+ animation: loaderrotator 2s ease-in 0s infinite normal;
+}
+@keyframes loaderrotator {
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+  
 }
